@@ -1,0 +1,21 @@
+.student-form{
+    padding: 1rem;
+    background-color: wheat;
+    right: 1rem;
+    position: absolute;
+    justify-content: center;
+}
+
+.student-form button{
+    margin: 1rem;
+}
+
+.form-control{
+    margin: 2rem;
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+
