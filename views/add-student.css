@@ -1,21 +1,53 @@
 .student-form{
     padding: 1rem;
     background-color: wheat;
-    right: 1rem;
+    left: 35%;
+    top: 20%;
     position: absolute;
-    justify-content: center;
+    border-radius: 2rem;
 }
 
-.student-form button{
-    margin: 1rem;
-}
 
 .form-control{
     margin: 2rem;
-    width: 100%;
-    justify-content: center;
+    justify-content: space-around;
+    display: flex;
 }
 
+.form-control button{
+    justify-self: center;
+    background-color: brown;
+    padding: .5rem 1.5rem;
+    color: wheat;
+    outline: none;
+    border-radius: 1rem;
+    text-decoration-style: none;
+    transition: all .5s;
+}
+
+.form-control button:hover,
+.form-control button:visited,
+.form-control button:active{
+    background-color: white;
+    color: black;
+    transform: scale(1.5,1.5);
+    text-decoration-style: none;
+}
+
+.form-control label{
+    font-weight: bold;
+    text-decoration-style: dashed;
+    align-self: center;
+    margin-right: 1rem;
+}
+
+.form-control input{
+    padding: .5rem;
+    margin-left: auto;
+    outline: none;
+    align-self: center;
+    border-radius: 2rem;
+}
 
 
 
