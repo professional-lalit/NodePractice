@@ -8,6 +8,7 @@ const router = express.Router();
 
 // /admin/add-product => GET
 router.get('/add-student', (req, res, next) => {
+  console.log('in add student page');
   res.sendFile(path.join(rootDir, 'views', 'add-student.html'));
 });
 
