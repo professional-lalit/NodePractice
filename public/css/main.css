@@ -45,7 +45,7 @@ main {
     margin: 0;
 }
 
-.home-header__navigation-item a:hover,
-.home-header__navigation-item a:active{
+.home-header__navigation-item a.active,
+.home-header__navigation-item a:hover{
     color: yellow;
 }

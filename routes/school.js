@@ -5,10 +5,11 @@ const express = require('express');
 const rootDir = require('../util/path');
 
 const router = express.Router();
+const adminData = require('./admin');
 
 router.get('/', (req, res, next) => {
-  console.log('in home page');
-  res.sendFile(path.join(rootDir, 'views', 'home.html'));
+  console.log('school.js',adminData.students);
+  res.render('home',{pageTitle: 'Home', path:'/', studentList : adminData.students});
 });
 
 module.exports = router;

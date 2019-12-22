@@ -6,16 +6,19 @@ const rootDir = require('../util/path');
 
 const router = express.Router();
 
-// /admin/add-product => GET
+const students = [];
+
+// /admin/add-product => GET  
 router.get('/add-student', (req, res, next) => {
-  console.log('in add student page');
-  res.sendFile(path.join(rootDir, 'views', 'add-student.html'));
+  res.render('add-student', { pageTitle: 'Add Student', path: '/admin/add-student' });
 });
 
 // /admin/add-product => POST
 router.post('/add-student', (req, res, next) => {
-  console.log(req.body);
+  console.log(req.body.first_name);
+  students.push({ student_name: req.body.first_name });
   res.redirect('/');
 });
 
-module.exports = router;
+exports.routes = router;
+exports.students = students;

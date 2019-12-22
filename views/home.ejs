@@ -1,0 +1,18 @@
+<%- include('includes/head.ejs') %>
+<body>
+   <%- include('includes/navigation.ejs') %>
+
+    <main>
+        <div class="main-section__hero-title">
+            Student List :
+        </div>
+        <div class="main-section__students">
+            <ul class="main-section__students-item-list">
+                <% for(let student of studentList) { %>
+                <li class="main-section__students-item"><%= student.student_name %></li>
+                <% } %>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
